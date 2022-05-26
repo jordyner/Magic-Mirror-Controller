@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/border_for_detail"
+    tools:context=".ItemDetailFragment">
+
+    <RelativeLayout
+        android:layout_weight=".45"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_view_detail"
+            android:layout_width="match_parent"
+            android:gravity="top|center_horizontal"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_view_detail"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="20dp"
+            android:layout_margin="8dp"
+            android:layout_alignBottom="@id/text_view_detail"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight=".55"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_view_detail2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="top|center_horizontal"
+            android:scrollbars = "vertical"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/try_on_button"
+            android:background="@drawable/border"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/text_view_detail2"
+            android:layout_width="125dp"
+            android:layout_height="25dp"
+            android:text="Nasadit"
+            android:layout_marginBottom="-40dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
